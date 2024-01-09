@@ -1,4 +1,4 @@
-package springmvc.login.config;
+package com.waffleWorld.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

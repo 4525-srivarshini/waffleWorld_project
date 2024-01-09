@@ -1,4 +1,4 @@
-package springmvc.login.dao;
+package com.waffleWorld.dao;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.sql.DataSource;

@@ -1,4 +1,4 @@
-package springmvc.login.model;
+package com.waffleWorld.model;
 
 import lombok.Getter;
 import lombok.Setter;

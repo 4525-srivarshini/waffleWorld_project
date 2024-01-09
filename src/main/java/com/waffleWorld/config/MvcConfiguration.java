@@ -1,4 +1,4 @@
-package springmvc.login.config;
+package com.waffleWorld.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -17,8 +17,8 @@ import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
 
-import springmvc.login.dao.Authentication;
-import springmvc.login.dao.AuthenticationDaoImpl;
+import com.waffleWorld.dao.Authentication;
+import com.waffleWorld.dao.AuthenticationDaoImpl;
 
 @Configuration
 @ComponentScan(basePackages="springmvc.login")

@@ -1,4 +1,4 @@
-package springmvc.login.controller;
+package com.waffleWorld.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import springmvc.login.dao.Authentication;
-import springmvc.login.model.User;
+import com.waffleWorld.dao.Authentication;
+import com.waffleWorld.model.User;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
