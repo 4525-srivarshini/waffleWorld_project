@@ -46,7 +46,7 @@ public class HomePageController {
 	}
 
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public ModelAndView registerUser(HttpServletRequest httpServletRequest) {
+	public ModelAndView userRegistration(HttpServletRequest httpServletRequest) {
 		ModelAndView mv = new ModelAndView();
 		int counter = 0;
 		counter = userDao.registerUser(httpServletRequest);

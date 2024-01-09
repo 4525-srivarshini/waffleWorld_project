@@ -24,13 +24,16 @@ public class AuthenticationDaoImpl implements Authentication {
 		String phone_number = httpServletRequest.getParameter("mobileNo");
 		String userPassword = httpServletRequest.getParameter("password");
 		String userConfirmPass = httpServletRequest.getParameter("repassword");
-		try {
-			int counter = jdbcTemplate.update(registerQuery, name, userEmail, phone_number, userPassword, userConfirmPass);
-			return counter;
-		} catch (Exception e) {
-			e.printStackTrace();
-			return 0;
+		if(userPassword == userConfirmPass) {
+			try {
+				int counter = jdbcTemplate.update(registerQuery, name, userEmail, phone_number, userPassword, userConfirmPass);
+				return counter;
+			} catch (Exception e) {
+				e.printStackTrace();
+				return 0;
+			}
 		}
+		return 0;
 	}
 
 	@Override
